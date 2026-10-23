@@ -1,0 +1,45 @@
+{
+  "users": [
+    {"id": 1, "name": "Иван Петров", "password": "hash_ivan", "email": "ivan@example.com", "phone": "+7-900-111-11-11", "birthday_date": "2000-04-12", "city": "Тула", "account_status": "active", "date_creation": "2026-10-01T10:00:00"},
+    {"id": 2, "name": "Мария Смирнова", "password": "hash_maria", "email": "maria@example.com", "phone": "+7-900-222-22-22", "birthday_date": "1998-08-23", "city": "Тула", "account_status": "active", "date_creation": "2026-10-02T09:30:00"},
+    {"id": 3, "name": "Алексей Котов", "password": "hash_alexey", "email": "alexey@example.com", "phone": "+7-900-333-33-33", "birthday_date": "1995-01-05", "city": "Москва", "account_status": "active", "date_creation": "2026-10-03T18:45:00"}
+  ],
+  "sellers": [
+    {"id": 1, "seller_type": "individual", "user_id": 2, "name": "Мария Смирнова", "email": "maria@example.com", "phone": "+7-900-222-22-22", "inn": null, "city": "Тула", "address": null, "account_status": "active", "date_creation": "2026-10-02T10:00:00"},
+    {"id": 2, "seller_type": "company", "user_id": 3, "name": "Питомник \"Тульский Усатый\"", "email": "info@tulawhisker.ru", "phone": "+7-4872-55-55-55", "inn": "7100123456", "city": "Тула", "address": "ул. Ленина, 13", "account_status": "active", "date_creation": "2026-10-04T12:00:00"},
+    {"id": 3, "seller_type": "individual", "user_id": null, "name": "Приют \"Друг\"", "email": "friend@shelter.ru", "phone": "+7-900-444-44-44", "inn": null, "city": "Тула", "address": null, "account_status": "active", "date_creation": "2026-10-05T08:00:00"}
+  ],
+  "pets": [
+    {"id": 1, "seller_id": 1, "pet_type": "cat", "nickname": "Мурка", "breed": "Британская", "gender": "female", "price": 15000.0, "age_in_months": 8, "color": "серый", "weight": 3.2, "vaccinations": true, "documents": true, "publication_status": "active", "publication_date": "2026-10-06T10:00:00"},
+    {"id": 2, "seller_id": 1, "pet_type": "cat", "nickname": "Барсик", "breed": "Сибирская", "gender": "male", "price": 8000.0, "age_in_months": 14, "color": "белый", "weight": 4.5, "vaccinations": true, "documents": false, "publication_status": "active", "publication_date": "2026-10-06T10:05:00"},
+    {"id": 3, "seller_id": 2, "pet_type": "cat", "nickname": "Луна", "breed": "Мейн-кун", "gender": "female", "price": 35000.0, "age_in_months": 5, "color": "чёрный", "weight": 5.0, "vaccinations": true, "documents": true, "publication_status": "active", "publication_date": "2026-10-07T09:00:00"},
+    {"id": 4, "seller_id": 2, "pet_type": "cat", "nickname": "Лео", "breed": "Мейн-кун", "gender": "male", "price": 30000.0, "age_in_months": 6, "color": "рыжий", "weight": 5.4, "vaccinations": true, "documents": true, "publication_status": "sold", "publication_date": "2026-10-07T09:05:00"},
+    {"id": 5, "seller_id": 3, "pet_type": "dog", "nickname": "Рекс", "breed": "Немецкая овчарка", "gender": "male", "price": 0.0, "age_in_months": 20, "color": "чёрно-подпалый", "weight": 25.0, "vaccinations": true, "documents": true, "publication_status": "active", "publication_date": "2026-10-08T11:00:00"},
+    {"id": 6, "seller_id": 3, "pet_type": "dog", "nickname": "Белла", "breed": "Лабрадор", "gender": "female", "price": 5000.0, "age_in_months": 30, "color": "золотистый", "weight": 22.0, "vaccinations": true, "documents": true, "publication_status": "archived", "publication_date": "2026-10-08T11:05:00"}
+  ],
+  "swipes": [
+    {"id": 1, "user_id": 1, "pet_id": 1, "direction": "right", "date": "2026-10-19T19:00:00"},
+    {"id": 2, "user_id": 1, "pet_id": 2, "direction": "left", "date": "2026-10-19T19:01:00"},
+    {"id": 3, "user_id": 1, "pet_id": 3, "direction": "right", "date": "2026-10-19T19:02:00"},
+    {"id": 4, "user_id": 3, "pet_id": 5, "direction": "right", "date": "2026-10-20T10:00:00"},
+    {"id": 5, "user_id": 3, "pet_id": 1, "direction": "left", "date": "2026-10-20T10:01:00"}
+  ],
+  "chats": [
+    {"id": 1, "seller_id": 1, "swipe_id": 1, "last_message_date": "2026-10-21T09:15:00", "date_creation": "2026-10-19T19:00:00"},
+    {"id": 2, "seller_id": 2, "swipe_id": 3, "last_message_date": "2026-10-19T19:02:00", "date_creation": "2026-10-19T19:02:00"},
+    {"id": 3, "seller_id": 3, "swipe_id": 4, "last_message_date": "2026-10-20T12:30:00", "date_creation": "2026-10-20T10:00:00"}
+  ],
+  "messages": [
+    {"id": 1, "chat_id": 1, "sender_type": "user", "sender_id": 1, "text": "Здравствуйте! Мурка ещё доступна?", "sent_date": "2026-10-19T19:10:00", "is_read": true},
+    {"id": 2, "chat_id": 1, "sender_type": "seller", "sender_id": 1, "text": "Добрый день! Да, ждём хозяина.", "sent_date": "2026-10-19T20:02:00", "is_read": true},
+    {"id": 3, "chat_id": 1, "sender_type": "user", "sender_id": 1, "text": "Можно приехать посмотреть в субботу?", "sent_date": "2026-10-21T09:15:00", "is_read": false},
+    {"id": 4, "chat_id": 3, "sender_type": "user", "sender_id": 3, "text": "Добрый день! Рекс привит?", "sent_date": "2026-10-20T12:30:00", "is_read": false}
+  ],
+  "notifications": [
+    {"id": 1, "recipient_type": "seller", "recipient_id": 1, "notification_type": "new_chat", "notification_date": "2026-10-19T19:00:00"},
+    {"id": 2, "recipient_type": "seller", "recipient_id": 2, "notification_type": "new_chat", "notification_date": "2026-10-19T19:02:00"},
+    {"id": 3, "recipient_type": "seller", "recipient_id": 3, "notification_type": "new_chat", "notification_date": "2026-10-20T10:00:00"},
+    {"id": 4, "recipient_type": "user", "recipient_id": 1, "notification_type": "new_message", "notification_date": "2026-10-19T20:02:00"},
+    {"id": 5, "recipient_type": "user", "recipient_id": 3, "notification_type": "new_message", "notification_date": "2026-10-20T12:30:00"}
+  ]
+}
