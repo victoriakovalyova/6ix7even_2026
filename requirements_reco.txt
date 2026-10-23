@@ -1,0 +1,6 @@
+sqlalchemy
+python-dotenv
+numpy
+torch
+transformers
+gigachat
